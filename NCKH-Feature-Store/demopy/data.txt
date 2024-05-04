@@ -1,0 +1,2 @@
+648	649	CA-2017-160745	2017-12-11 00:00:00	2017-12-16 00:00:00	Second Class	AR-10825	Anthony Rawles	Corporate	United States	Vancouver	Washington	98661	West	FUR-FU-10001935	Furniture	Furnishings	3M Hangers With Command Adhesive	14.8	4	0	6.068
+6385	6386	US-2018-104661	2018-01-15 00:00:00	2018-01-18 00:00:00	First Class	TB-21250	Tim Brockman	Consumer	United States	Austin	Texas	78745	Central	TEC-AC-10002331	Technology	Accessories	"Maxell 74 Minute CDR, 10/Pack"	62.592	8	0.2	13.3008

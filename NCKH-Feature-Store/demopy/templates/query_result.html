@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Query Result</title>
+<style>
+    table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>int64_field_0</th>
+            <th>Row_ID</th>
+            <th>Order_ID</th>
+            <th>Order_Date</th>
+            <th>Ship_Date</th>
+            <th>Ship_Mode</th>
+            <th>Customer_ID</th>
+            <th>Customer_Name</th>
+            <th>Segment</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal_Code</th>
+            <th>Region</th>
+            <th>Product_ID</th>
+            <th>Category</th>
+            <th>Sub_Category</th>
+            <th>Product_Name</th>
+            <th>Sales</th>
+            <th>Quantity</th>
+            <th>Discount</th>
+            <th>Profit</th>
+            <th>is_processed</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for result in results %}
+    <tr>
+        <td>{{ result[0] }}</td>
+        <td>{{ result[1] }}</td>
+        <td>{{ result[2] }}</td>
+        <td>{{ result[3] }}</td>
+        <td>{{ result[4] }}</td>
+        <td>{{ result[5] }}</td>
+        <td>{{ result[6] }}</td>
+        <td>{{ result[7] }}</td>
+        <td>{{ result[8] }}</td>
+        <td>{{ result[9] }}</td>
+        <td>{{ result[10] }}</td>
+        <td>{{ result[11] }}</td>
+        <td>{{ result[12] }}</td>
+        <td>{{ result[13] }}</td>
+        <td>{{ result[14] }}</td>
+        <td>{{ result[15] }}</td>
+        <td>{{ result[16] }}</td>
+        <td>{{ result[17] }}</td>
+        <td>{{ result[18] }}</td>
+        <td>{{ result[19] }}</td>
+        <td>{{ result[20] }}</td>
+        <td>{{ result[21] }}</td>
+        <td>{{ result[22] }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<form action="/processing/" method="post">
+    <button name="processingBtn" type="submit">Processing Data</button>
+</form>
+
+<form action="/insert/" method="post" enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value="upLoad">
+</form>
